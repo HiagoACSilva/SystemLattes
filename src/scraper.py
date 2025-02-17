@@ -46,7 +46,7 @@ def webscraper(link, name, dados):
     df.to_csv(f"data/csv/{name}.csv", index=False)
 
 
-links = keys.links_sigaa()
+links = keys.links_ppg()
 for link, name in links:
     webscraper(link, name, dadosAllDocentes)
 
